@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevOps Notes</title>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <h1>DevOps Notes</h1>
+      <p class="subtitle">Nginx → Node.js → MySQL + Redis</p>
+    </header>
+
+    <section class="status" aria-label="Стан сервісів">
+      <div class="pill" id="health">API: перевіряю…</div>
+      <div class="pill" id="version">версія: …</div>
+      <div class="pill" id="visits">відвідувань: …</div>
+    </section>
+
+    <form class="note-form" id="note-form">
+      <label for="note-text">Нова нотатка</label>
+      <div class="row">
+        <input id="note-text" name="text" maxlength="500" placeholder="Наприклад: налаштувати Quality Gate" required>
+        <button type="submit">Додати</button>
+      </div>
+      <p class="error" id="form-error" role="alert"></p>
+    </form>
+
+    <ul class="notes" id="notes"></ul>
+  </main>
+</body>
+</html>
