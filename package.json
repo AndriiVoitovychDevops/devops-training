@@ -25,5 +25,11 @@
     "style-loader": "^4.0.0",
     "webpack": "^5.111.1",
     "webpack-cli": "^7.2.3"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
