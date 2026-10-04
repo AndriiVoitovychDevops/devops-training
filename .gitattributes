@@ -1,0 +1,9 @@
+# Важливо для Windows: скрипти для Linux мають бути з LF-кінцями рядків,
+# інакше bash у VM видасть помилку "$'\r': command not found".
+* text=auto
+*.sh text eol=lf
+Jenkinsfile text eol=lf
+Vagrantfile text eol=lf
+*.conf text eol=lf
+*.yml text eol=lf
+*.tf text eol=lf

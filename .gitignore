@@ -1,0 +1,26 @@
+node_modules/
+frontend/dist/
+coverage/
+dist-artifact/
+
+# SonarQube
+.scannerwork/
+.sonar/
+
+# Секрети
+.env
+
+# Vagrant
+.vagrant/
+infra/vagrant/.shared/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Системне
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,29 @@
+{
+  "name": "devops-notes-app",
+  "version": "1.0.0",
+  "description": "Навчальний проєкт: Node.js API + Webpack фронтенд + MySQL + Redis",
+  "private": true,
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "pretest": "node -e \"require('fs').mkdirSync('coverage',{recursive:true})\"",
+    "test": "node --test --experimental-test-coverage --test-reporter=spec --test-reporter-destination=stdout --test-reporter=lcov --test-reporter-destination=coverage/lcov.info \"tests/**/*.test.js\"",
+    "build": "webpack --mode production",
+    "dev:frontend": "webpack --mode development --watch"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mysql2": "^3.24.5",
+    "redis": "^6.3.0"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.5",
+    "html-webpack-plugin": "^5.6.8",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3"
+  }
+}
